@@ -18,4 +18,4 @@ jobs:
           service_account_email: ${{ secrets.GCLOUD_EMAIL }}
           service_account_key: ${{ secrets.GCLOUD_AUTH }}
       - name: Submit job to gcp
-        run: gcloud builds submit --no-source --config cloudbuild.yml --project buildpipe-test --timeout 10s --machine-type n1-standard-1
+        run: gcloud builds submit --no-source --config cloudbuild.yml --project buildpipe-test --timeout 10s
